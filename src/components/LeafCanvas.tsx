@@ -73,7 +73,7 @@ export default function LeafCanvas({ seed,  onProgressUpdate }: { seed: string; 
               const i = parseInt(iStr);
               if (i <= 0) return '';
               const scale = (i % 2 === 0) ? 0.1 : 2.5;
-              const randomness = 1 + p.random(-0.2, 0.2); // 20% variation
+              const randomness = 1 + p.random(-0.3, 0.3); // 20% variation
               const length = d * Math.pow(e, i) * scale * randomness;
               if (i === generations - 1) {
                 return `F(${(length * 6).toFixed(2)})`;
