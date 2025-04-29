@@ -584,7 +584,7 @@ export default function LeafCanvas({ seed,  onProgressUpdate }: { seed: string; 
 
   return (
     <div className='w-full h-full flex flex-col'>
-    <div ref={sketchRef} className="w-[100svh] h-[100svh] border" />
+    <div ref={sketchRef} className="w-[100svh] h-[100svh] hover:bg-white/50" />
     <button
       onClick={() => {
               const canvas = document.querySelector('canvas');
